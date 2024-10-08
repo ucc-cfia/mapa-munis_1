@@ -1,0 +1,46 @@
+/* Estilos para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos para los títulos */
+h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Estilos para el párrafo */
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor del mapa */
+#mapaid {
+    flex: 1;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Clase personalizada para tooltips de texto sin recuadro */
+.text-only-tooltip {
+    background-color: transparent;  /* Quitar el fondo */
+    border: none;  /* Quitar el borde */
+    box-shadow: none;  /* Quitar la sombra */
+    color: #000;  /* Cambiar el color del texto si es necesario */
+    font-weight: bold;  /* Hacer el texto más visible */
+}
+
