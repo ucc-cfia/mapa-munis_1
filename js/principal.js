@@ -124,8 +124,8 @@ mapa.on('zoomend', function () {
 });
 
 // Capa de Municipalidades pendientes en formato GeoJSON
-$.getJSON("datos/municipalidades_pendientes.geojson", function (geodata) {
-    var municipalidades_pendientes = L.geoJson(geodata, {
+$.getJSON("datos/municipalidades_sin_respuesta.geojson", function (geodata) {
+    var municipalidades_sin_respuesta = L.geoJson(geodata, {
         pointToLayer: function (feature, latlng) {
             var leafIcon = new L.Icon({
                 iconUrl: 'bombillo-amarillo.png', 
@@ -151,7 +151,7 @@ $.getJSON("datos/municipalidades_pendientes.geojson", function (geodata) {
         },
     }).addTo(mapa);
 
-    control_capas.addOverlay(municipalidades_pendientes, "Municipalidades pendientes");
+    control_capas.addOverlay(municipalidades_sin_respuesta, "Municipalidades sin respuesta");
 });
 
 // Función para ajustar el tamaño de la letra según el zoom
